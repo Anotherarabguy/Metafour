@@ -215,7 +215,6 @@
 </head>
 
 <body style="background-color: #0f0d0d; direction: rtl;"> <!-- Set the direction to RTL -->
-    <div id="blog-container">
 
     <nav class="navbar navbar-expand-md bg-light">
         <div class="container">
@@ -239,7 +238,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="artworks.html">الأعمال الفنية</a></li>
-                            <li><a class="dropdown-item" href="#">المعارض</a></li>
+                            <li><a class="dropdown-item" href="">المعارض</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="artists.html">الفنانين</a></li>
                         </ul>
@@ -253,17 +252,19 @@
                 </div>
             </div>
         </div>
-        <form class="d-flex mr-auto" role="search">
-            <input class="form-control me-2" type="search" placeholder="بحث" aria-label="بحث">
+        <form class="d-flex" role="search">
+            <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">بحث</button>
         </form>
+        
+        
         <div class="language-dropdown dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown">
                 اللغة
             </button>
             <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                <li><a class="dropdown-item" href="about.html" id="englishLanguage">English</a></li>
-                <li><a class="dropdown-item" href="arabout.html" id="arabicLanguage">عربي</a></li>
+                <li><a class="dropdown-item" href="index.html" id="englishLanguage">English</a></li>
+                <li><a class="dropdown-item" href="arindex.html" id="arabicLanguage">عربي</a></li>
             </ul>
     </nav>
 
