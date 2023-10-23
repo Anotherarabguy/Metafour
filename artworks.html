@@ -335,6 +335,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+const contentful = require('contentful')
+
+const client = contentful.createClient({
+  space: 'jtijxprr48tw',
+  environment: 'master', // defaults to 'master' if not set
+  accessToken: '_kRokH8vqcFHgXJPEp8MKDCFCbClMc3zCynu6WZPN7M'
+})
+
+client.getEntry('7h4on5Bbjqz1D2oOme1jKH')
+  .then((entry) => console.log(entry))
+  .catch(console.error)
+
       </script>
       
 </body>
