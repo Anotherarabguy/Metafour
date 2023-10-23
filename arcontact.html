@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap" rel="stylesheet">
+
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Sometype Mono', monospace;
+        }
+
+        body {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+            background-color: #0f0d0d;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #F1583E;
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #ff0000;
+        }
+
+        ::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        .nav-link {
+            color: #000000;
+        }
+
+        .nav-link:hover {
+            color: #9c3030;
+        }
+
+        .lead {
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+
+        .lead:hover {
+            color: #ff0000;
+        }
+
+        body {
+            background-color: #0f0d0d;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+        }
+
+        .container {
+            flex: 1;
+        }
+
+        .lead2 {
+            color: #ffffff;
+        }
+
+        .image-container {
+            margin-top: 100px;
+            
+        }
+
+        .image-back p {
+            color: #F1583E;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .cool-image {
+            filter: grayscale(10%) brightness(90%) contrast(120%);
+            transition: filter 1.3s ease-in-out;
+        }
+
+        .cool-image:hover {
+            filter: grayscale(0%) brightness(50%) contrast(100%);
+        }
+
+        .cool-border {
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .cool-border:hover {
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .with-border {
+            border: 5px solid #f3f3f3;
+            display: inline-block;
+            padding: 10px;
+            transition: border 0.3s ease-in-out;
+        }
+
+        .with-border:hover {
+            border: 5px solid #F1583E;
+        }
+
+        p.lead,
+        p.lead2 {
+            max-width: 800px;
+            margin: 0px auto;
+            padding: 20px;
+        }
+
+        .starry-night-text {
+            font-family: 'cursive';
+            font-size: 50px;
+            color: transparent;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+            padding: 10px;
+            animation: starry-night 5s linear infinite;
+        }
+
+        @keyframes starry-night {
+            0%, 100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+            }
+            50% {
+                text-shadow: none;
+            }
+        }
+        .language-dropdown {
+        position: relative;
+    }
+
+    .language-dropdown .btn-secondary {
+        background-color: transparent;
+        border: none;
+        color: #000;
+        border-bottom: 2px solid transparent;
+    }
+
+    .language-dropdown .btn-secondary:focus {
+        box-shadow: none;
+    }
+
+    .language-dropdown .btn-secondary:hover {
+        color: #9e3333;
+        border-bottom: 2px solid #9e3333;
+    }
+
+    /* Adjust the Language dropdown menu items */
+    .language-dropdown .dropdown-menu {
+        background-color: #fff;
+        border: 2px solid #a31f1f;
+        border-radius: 10px;
+    }
+
+    .language-dropdown .dropdown-item {
+        color: #000;
+    }
+
+    .language-dropdown .dropdown-item:hover {
+        background-color: #F1583E;
+        color: #fff;
+    }
+
+    .contact-container {
+        max-width: 400px; /* Set the desired width */
+        margin: 110px auto;
+        padding: 20px;
+        background-color: #0F0D0D;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .contact-container:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+    }
+
+    /* Custom CSS to make form elements smaller */
+    .smaller-input {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.875rem;
+    }
+    
+    </style>
+</head>
+
+<body style="background-color: #0f0d0d; direction: rtl;"> <!-- Set the direction to RTL -->
+    <div id="blog-container">
+
+    <nav class="navbar navbar-expand-md bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Meta4logo.png" class="rounded float-start" alt="Metaphor Logo" height="40" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto"> <!-- Use ml-auto class to move items to the right -->
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">معلومات عنا</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            الأعمال
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="artworks.html">الأعمال الفنية</a></li>
+                            <li><a class="dropdown-item" href="#">المعارض</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="artists.html">الفنانين</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+               
+               
+                </div>
+            </div>
+        </div>
+        <form class="d-flex mr-auto" role="search">
+            <input class="form-control me-2" type="search" placeholder="بحث" aria-label="بحث">
+            <button class="btn btn-outline-success" type="submit">بحث</button>
+        </form>
+        <div class="language-dropdown dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown">
+                اللغة
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item" href="about.html" id="englishLanguage">English</a></li>
+                <li><a class="dropdown-item" href="arabout.html" id="arabicLanguage">عربي</a></li>
+            </ul>
+    </nav>
+
+    <div class="contact-container">
+        <div class="text-center">
+            <h1 class="display-5 text-danger fw-bold">تواصل معنا</h1>
+        </div>
+        <!-- Add your contact form here -->
+        <div class="contact-form">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">الاسم</label>
+                    <input type="text" class="form-control smaller-input" id="name" placeholder="Metafour">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">الايميل</label>
+                    <input type="email" class="form-control smaller-input" id="email" placeholder="Metafour_123@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">الرسالة</label>
+                    <textarea class="form-control smaller-input" id="message" rows="5" placeholder="Your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">ارسل</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<div class="text-center image-container" style="height: 100px;">
+    <img src="meta44.png" alt="Art Gallery Image" class="img-fluid">
+</div>
+</div>
+
+ <script>// Define the API endpoint URL
+    const apiUrl = 'http://localhost:1337/blog-posts';
+    
+    // Make a GET request to the API
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        // Process and use the retrieved data here
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
+      const container = document.getElementById('blog-container'); // Replace with your HTML element
+    data.forEach((post) => {
+      const postElement = document.createElement('div');
+      postElement.innerHTML = `
+        <h2>${post.title}</h2>
+        <p>${post.content}</p>
+      `;
+      container.appendChild(postElement);
+    });</script>
+</body>
+
+</html>

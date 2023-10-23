@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exhibitions.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap" rel="stylesheet">
+    <title>Exhibitions - Metaphor</title>
+    
+    <style>
+        body {
+            font-family: 'Sometype Mono', monospace;
+            background-color: #0F0D0D;
+        }
+
+        .navbar {
+            background-color: #fffcfc;
+        }
+
+        .nav-link {
+            color: #030000;
+        }
+
+        .nav-link:hover {
+            color: #9e3333;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar  navbar-expand-md">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Meta4logo.png" class="rounded float-start" alt="Metaphor Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Work
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="artworks.html">Artworks</a></li>
+                            <li><a class="dropdown-item" href="exhibitions.html">Exhibitions</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="artists.html">Artists</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="language-dropdown dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown">
+                        Language
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <script src="common.js"></script>
+                        <li><a class="dropdown-item" href="#" id="englishLanguage" onclick="setLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item" href="arindex.html" id="arabicLanguage" onclick="setLanguage('ar')">العربية</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="showcase">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="exhibition-image">
+                        <img src="metapr.jpeg" alt="Exhibition Image" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="exhibition-details">
+                        <h2>Exhibition in Tunis</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Aenean vel tincidunt risus, eget tristique ipsum. 
+                            Praesent non justo eget elit tristique fermentum.
+                        </p>
+                        <a href="exhibition_tunis.html" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="exhibition-image">
+                        <img src="metapr.jpeg" alt="Exhibition Image" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="exhibition-details">
+                        <h2>Exhibition in Tunis</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Aenean vel tincidunt risus, eget tristique ipsum. 
+                            Praesent non justo eget elit tristique fermentum.
+                        </p>
+                        <a href="exhibition_tunis.html" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="exhibition-image">
+                        <img src="metapr.jpeg" alt="Exhibition Image" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="exhibition-details">
+                        <h2>Exhibition in Tunis</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Aenean vel tincidunt risus, eget tristique ipsum. 
+                            Praesent non justo eget elit tristique fermentum.
+                        </p>
+                        <a href="exhibition_tunis.html" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>// Define the API endpoint URL
+        const apiUrl = 'http://localhost:1337/blog-posts';
+        
+        // Make a GET request to the API
+        fetch(apiUrl)
+          .then((response) => response.json())
+          .then((data) => {
+            // Process and use the retrieved data here
+            console.log(data);
+          })
+          .catch((error) => {
+            console.error('Error fetching data:', error);
+          });
+          const container = document.getElementById('blog-container'); // Replace with your HTML element
+        data.forEach((post) => {
+          const postElement = document.createElement('div');
+          postElement.innerHTML = `
+            <h2>${post.title}</h2>
+            <p>${post.content}</p>
+          `;
+          container.appendChild(postElement);
+        });
+        
+        </script>
+</body>
+</html>

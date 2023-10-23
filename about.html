@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap" rel="stylesheet">
+
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Sometype Mono', monospace;
+}
+
+/* Update the font size and color as needed */
+body {
+    font-size: 16px;
+    color: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700; /* Adjust the font weight as needed */
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; /* Adjust the font weight as needed */
+}
+::-webkit-scrollbar {
+    width: 12px; /* Adjust the width as needed */
+    background-color: #0f0d0d;
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #F1583E; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Adjust to change the shape */
+}
+
+/* Scrollbar Track on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ff0000; /* Color on hover, change as needed */
+}
+
+/* Scrollbar Button (Up/Down arrows) */
+::-webkit-scrollbar-button {
+    display: none;
+}
+        
+        .nav-link {
+            color: #000000;
+        }
+
+        .nav-link:hover {
+            color: #9c3030;
+        }
+
+        .lead {
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+
+        .lead:hover {
+            color: #ff0000;
+        }
+
+        body {
+    background-color: #0f0d0d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+        .container {
+            flex: 1;
+            
+        }
+
+      
+
+        .lead2 {
+            color: #ffffff;
+        }
+
+        .image-container {
+            margin-top: 150px; /* Adjust the margin as needed */
+        }
+
+        .image-back p
+        {
+         color: #F1583E;
+         text-align: center;
+         font-size: 0.9em;
+        }
+        .cool-image {
+    filter: grayscale(10%) brightness(90%) contrast(120%);
+    transition: filter 1.3s ease-in-out;
+}
+
+/* Add a hover effect to make the image look cooler on hover */
+.cool-image:hover {
+    filter: grayscale(0%) brightness(50%) contrast(100%);
+}
+
+.cool-border {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Add a hover effect to the border */
+.cool-border:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+.with-border {
+    border: 5px solid #f3f3f3; /* You can adjust the width and color as needed */
+    display: inline-block; /* Prevent the border from extending to the full width of the container */
+    padding: 10px; /* Add padding to control the distance between the image and the border */
+    transition: border 0.3s ease-in-out;
+}
+
+/* Add a hover effect to the border */
+.with-border:hover {
+    border: 5px solid #F1583E; /* Change the color on hover if desired */
+}
+p.lead, p.lead2 {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0px auto; /* Center the paragraphs horizontally */
+    padding: 20px; /* Add some padding for better readability */
+    
+}
+
+.starry-night-text {
+    font-family: 'cursive'; /* Use a cursive or handwritten-style font */
+    font-size: 50px; /* Adjust the font size as needed */
+    color: transparent; /* Make the text transparent */
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff; /* Add multiple text shadows for a twinkling effect */
+    padding: 10px; /* Add some padding to the text for spacing */
+    animation: starry-night 5s linear infinite; /* Add an animation for the twinkling effect */
+}
+
+/* Define a keyframes animation for the twinkling effect */
+@keyframes starry-night {
+    0%, 100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff; /* Initial and final state of the text shadow */
+    }
+    50% {
+        text-shadow: none; /* Middle state of the animation without text shadow */
+    }
+}
+.language-dropdown {
+        position: relative;
+    }
+
+    .language-dropdown .btn-secondary {
+        background-color: transparent;
+        border: none;
+        color: #000;
+        border-bottom: 2px solid transparent;
+    }
+
+    .language-dropdown .btn-secondary:focus {
+        box-shadow: none;
+    }
+
+    .language-dropdown .btn-secondary:hover {
+        color: #9e3333;
+        border-bottom: 2px solid #9e3333;
+    }
+
+    /* Adjust the Language dropdown menu items */
+    .language-dropdown .dropdown-menu {
+        background-color: #fff;
+        border: 2px solid #a31f1f;
+        border-radius: 10px;
+    }
+
+    .language-dropdown .dropdown-item {
+        color: #000;
+    }
+
+    .language-dropdown .dropdown-item:hover {
+        background-color: #F1583E;
+        color: #fff;
+    }
+
+    </style>
+</head>
+
+<body style="background-color: #0f0d0d;">
+    <nav class="navbar navbar-expand-md bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Meta4logo.png" class="rounded float-start" alt="Metaphor Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Work
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="artworks.html">Artworks</a></li>
+                            <li><a class="dropdown-item" href="#">Exhibitions</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="artists.html">Artists</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="language-dropdown dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown">
+                        Language
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="about.html" id="englishLanguage">English</a></li>
+                        <li><a class="dropdown-item" href="arabout.html" id="arabicLanguage">العربية</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+
+        <div class="text-center">
+            <h1 class="display-5 text-danger fw-bold">About Us</h1>
+        </div>
+        <p class="lead">
+            Welcome to our art gallery, where we showcase a diverse collection of artworks created by talented artists from around the world. Our mission is to connect artists with art enthusiasts and collectors, fostering a vibrant and creative community.
+        </p>
+        <p class="lead2">
+            At our gallery, we believe in the power of art to inspire, provoke thought, and bring people together. We're not just a space to display and sell art; we're a hub for artistic expression and appreciation. Whether you're a seasoned art connoisseur or just starting your art journey, there's something here for everyone.
+        </p>
+    </div>
+    <div class="text-center image-back">
+        <div class="image-wrapper">
+            <div class="image-container with-border">
+                <img src="back.png" alt="Cool Parallax Image" class="cool-image">
+            </div>
+        </div>
+        <p class="starry-night-text">Metafour collective</p>
+    </div>
+        
+    
+    <div class="text-center image-container" style="height: 100px;"> <!-- Adjust the height as needed -->
+        <img src="meta44.png" alt="Art Gallery Image" class="img-fluid">
+    </div>
+ <script>// Define the API endpoint URL
+    const apiUrl = 'http://localhost:1337/blog-posts';
+    
+    // Make a GET request to the API
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        // Process and use the retrieved data here
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
+      const container = document.getElementById('blog-container'); // Replace with your HTML element
+    data.forEach((post) => {
+      const postElement = document.createElement('div');
+      postElement.innerHTML = `
+        <h2>${post.title}</h2>
+        <p>${post.content}</p>
+      `;
+      container.appendChild(postElement);
+    });</script>
+    
+</body>
+
+</html>
