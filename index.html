@@ -124,6 +124,8 @@ h1, h2, h3, h4, h5, h6 {
                 <img src="Meta4logo.png" class="rounded float-start" alt="Metaphor Logo" height="40" >
 
             </a>
+
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -151,9 +153,10 @@ h1, h2, h3, h4, h5, h6 {
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                
                 <div class="language-dropdown dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown">
                         Language
@@ -227,7 +230,59 @@ function changeContentBasedOnLanguage() {
 // Call the function to change content based on the selected language
 changeContentBasedOnLanguage();
 
+// Get references to the input field and search results container
+const searchInput = document.getElementById('search-input');
+const searchResults = document.getElementById('search-results');
 
+// Your data to search (an array of strings or objects)
+const dataToSearch = [
+  'Item 1',
+  'Item 2',
+  'Item 3',
+  // Add more items here
+];
+
+// Function to perform the search and update the results
+function performSearch(query) {
+  const filteredResults = dataToSearch.filter(item => item.includes(query));
+  return filteredResults;
+}
+
+// Function to display search results
+function displayResults(results) {
+  searchResults.innerHTML = '';
+  if (results.length === 0) {
+    searchResults.innerHTML = 'No results found.';
+  } else {
+    results.forEach(result => {
+      const resultItem = document.createElement('div');
+      resultItem.textContent = result;
+      searchResults.appendChild(resultItem);
+    });
+  }
+}
+
+// Handle form submission
+document.getElementById('search-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const query = searchInput.value;
+  const searchResults = performSearch(query);
+  displayResults(searchResults);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const searchForm = document.querySelector('form[role="search"]');
+    const searchInput = document.getElementById('search-input');
+
+    searchForm.addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent the form from submitting to a server
+
+        const query = searchInput.value;
+        alert(`You searched for: ${query}`);
+
+        // You can replace the alert with your custom search logic to display results.
+    });
+});
 
         </script>
 </body>

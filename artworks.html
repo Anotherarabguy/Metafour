@@ -218,6 +218,8 @@
             </div>
         </nav>
 
+        
+
     <div class="container">
         <h1 class="text-center mt-4">Artworks</h1>
         <div class="row">
@@ -337,6 +339,20 @@ data.forEach((post) => {
   `;
   container.appendChild(postElement);
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const searchForm = document.querySelector('form[role="search"]');
+    const searchInput = document.getElementById('search-input');
+
+    searchForm.addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent the form from submitting to a server
+
+        const query = searchInput.value;
+        alert(`You searched for: ${query}`);
+
+        // You can replace the alert with your custom search logic to display results.
+    });
+});
+
       </script>
       
 </body>

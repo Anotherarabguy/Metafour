@@ -167,7 +167,46 @@
           `;
           container.appendChild(postElement);
         });
-        
+        // Get references to the input field and search results container
+const searchInput = document.getElementById('search-input');
+const searchResults = document.getElementById('search-results');
+
+// Your data to search (an array of strings or objects)
+const dataToSearch = [
+  'Item 1',
+  'Item 2',
+  'Item 3',
+  // Add more items here
+];
+
+// Function to perform the search and update the results
+function performSearch(query) {
+  const filteredResults = dataToSearch.filter(item => item.includes(query));
+  return filteredResults;
+}
+
+// Function to display search results
+function displayResults(results) {
+  searchResults.innerHTML = '';
+  if (results.length === 0) {
+    searchResults.innerHTML = 'No results found.';
+  } else {
+    results.forEach(result => {
+      const resultItem = document.createElement('div');
+      resultItem.textContent = result;
+      searchResults.appendChild(resultItem);
+    });
+  }
+}
+
+// Handle form submission
+document.getElementById('search-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const query = searchInput.value;
+  const searchResults = performSearch(query);
+  displayResults(searchResults);
+});
+
         </script>
 </body>
 </html>
