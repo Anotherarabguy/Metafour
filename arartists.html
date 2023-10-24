@@ -181,24 +181,24 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto"> <!-- Use ml-auto class to move items to the right -->
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="index.html">الرئيسية</a>
+                            <a class="nav-link " aria-current="page" href="arindex.html">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">معلومات عنا</a>
+                            <a class="nav-link" href="arabout.html">معلومات عنا</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 الأعمال
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="artworks.html">الأعمال الفنية</a></li>
-                                <li><a class="dropdown-item" href="#">المعارض</a></li>
+                                <li><a class="dropdown-item" href="arartworks.html">الأعمال الفنية</a></li>
+                                <li><a class="dropdown-item" href="arexhibitions.html">المعارض</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="artists.html">الفنانين</a></li>
+                                <li><a class="dropdown-item" href="arartists.html">الفنانين</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">اتصل بنا</a>
+                            <a class="nav-link" href="arcontact.html">اتصل بنا</a>
                         </li>
                     </ul>
                    
@@ -207,18 +207,21 @@
                 </div>
             </div>
             
-            <form class="d-flex mr-auto" role="search">
-                <input class="form-control me-2" type="search" placeholder="بحث" aria-label="بحث">
-                <button class="btn btn-outline-success" type="submit">بحث</button>
+            
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             <div class="language-dropdown dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown">
-                    اللغة
+                    Language
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                    <li><a class="dropdown-item" href="artists.html" id="englishLanguage">English</a></li>
-                    <li><a class="dropdown-item" href="arartist.html" id="arabicLanguage">عربي</a></li>
+                    <script src="common.js"></script>
+                    <li><a class="dropdown-item" href="artists.html" id="englishLanguage" onclick="setLanguage('en')">English</a></li>
+                    <li><a class="dropdown-item" href="arartist.html" id="arabicLanguage" onclick="setLanguage('ar')">العربية</a></li>
                 </ul>
+            </div>
         </nav>
 
         

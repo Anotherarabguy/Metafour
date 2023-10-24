@@ -219,7 +219,7 @@
     <nav class="navbar navbar-expand-md bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="Meta4logo.png" class="rounded float-start" alt="Metaphor Logo" height="40" >
+                <img src="Meta4logo.png" class="rounded float-start" alt="Metaphor Logo" height="40">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -227,45 +227,54 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto"> <!-- Use ml-auto class to move items to the right -->
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="index.html">الرئيسية</a>
+                        <a class="nav-link " aria-current="page" href="arindex.html">الرئيسية</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">معلومات عنا</a>
+                        <a class="nav-link" href="arabout.html">معلومات عنا</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             الأعمال
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="artworks.html">الأعمال الفنية</a></li>
-                            <li><a class="dropdown-item" href="">المعارض</a></li>
+                            <li><a class="dropdown-item" href="arartworks.html">الأعمال الفنية</a></li>
+                            <li><a class="dropdown-item" href="arexhibitions.html">المعارض</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="artists.html">الفنانين</a></li>
+                            <li><a class="dropdown-item" href="arartists.html">الفنانين</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                        <a class="nav-link" href="arcontact.html">اتصل بنا</a>
                     </li>
                 </ul>
-               
-               
+                
+                <div class="language-dropdown dropdown">
+                  
+                        Language
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <script src="common.js"></script>
+                        <li><a class="dropdown-item" href="exhibitions.html" id="englishLanguage" onclick="setLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item" href="arcontact.html" id="arabicLanguage" onclick="setLanguage('ar')">العربية</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+
         <form class="d-flex" role="search">
-            <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">بحث</button>
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
-        
-        
         <div class="language-dropdown dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown">
-                اللغة
+                Language
             </button>
             <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                <li><a class="dropdown-item" href="index.html" id="englishLanguage">English</a></li>
-                <li><a class="dropdown-item" href="arindex.html" id="arabicLanguage">عربي</a></li>
+                <script src="common.js"></script>
+                <li><a class="dropdown-item" href="exhibitions.html" id="englishLanguage" onclick="setLanguage('en')">English</a></li>
+                <li><a class="dropdown-item" href="arcontact.html" id="arabicLanguage" onclick="setLanguage('ar')">العربية</a></li>
             </ul>
+        </div>
     </nav>
 
     <div class="contact-container">

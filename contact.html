@@ -255,10 +255,7 @@
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                
                 <div class="language-dropdown dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown">
                         Language
@@ -269,6 +266,20 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="language-dropdown dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown">
+                Language
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <script src="common.js"></script>
+                <li><a class="dropdown-item" href="contact.html" id="englishLanguage" onclick="setLanguage('en')">English</a></li>
+                <li><a class="dropdown-item" href="arcontact.html" id="arabicLanguage" onclick="setLanguage('ar')">العربية</a></li>
+            </ul>
         </div>
     </nav>
 
